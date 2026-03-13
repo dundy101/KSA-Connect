@@ -1,0 +1,63 @@
+/* ══════════════════════════════════════
+   REVEAL ANIMATIONS
+══════════════════════════════════════ */
+.reveal-up,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-up    { transform: translateY(40px); }
+.reveal-left  { transform: translateX(-40px); }
+.reveal-right { transform: translateX(40px); }
+
+.reveal-up.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* DELAY UTILITIES */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* NAV LINK UNDERLINE EFFECT */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 50%; right: 50%;
+  height: 1px;
+  background: var(--red);
+  transition: left 0.3s var(--ease-out), right 0.3s var(--ease-out);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  left: 0.9rem;
+  right: 0.9rem;
+}
+
+/* STAGGER CHILDREN */
+.about-cards .about-card:nth-child(1) { transition-delay: 0.05s; }
+.about-cards .about-card:nth-child(2) { transition-delay: 0.15s; }
+.about-cards .about-card:nth-child(3) { transition-delay: 0.25s; }
+.about-cards .about-card:nth-child(4) { transition-delay: 0.35s; }
+
+.timeline-item:nth-child(1)  { transition-delay: 0.00s; }
+.timeline-item:nth-child(2)  { transition-delay: 0.07s; }
+.timeline-item:nth-child(3)  { transition-delay: 0.14s; }
+.timeline-item:nth-child(4)  { transition-delay: 0.21s; }
+.timeline-item:nth-child(5)  { transition-delay: 0.28s; }
+.timeline-item:nth-child(6)  { transition-delay: 0.35s; }
+.timeline-item:nth-child(7)  { transition-delay: 0.42s; }
+.timeline-item:nth-child(8)  { transition-delay: 0.49s; }
+.timeline-item:nth-child(9)  { transition-delay: 0.56s; }

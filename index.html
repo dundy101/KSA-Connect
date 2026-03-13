@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KSA Connect 2026</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)" />
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin />
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap)" rel="stylesheet"/>
+</head>
+<body class="loading">
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">KSA<span>Connect</span></div>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">KSA<span>Connect</span> <em>2026</em></a>
+      <ul class="nav-links">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#universities" class="nav-link">Universities</a></li>
+        <li><a href="#agenda"       class="nav-link">Agenda</a></li>
+        <li><a href="#speakers"     class="nav-link">Speakers</a></li>
+        <li><a href="#workshops"    class="nav-link">Workshops</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"        class="mobile-link">About</a></li>
+      <li><a href="#universities" class="mobile-link">Universities</a></li>
+      <li><a href="#agenda"       class="mobile-link">Agenda</a></li>
+      <li><a href="#speakers"     class="mobile-link">Speakers</a></li>
+      <li><a href="#workshops"    class="mobile-link">Workshops</a></li>
+      <li><a href="#contact"      class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span>
+        Ohio KSA &amp; KASA Summit · April 18, 2026
+      </div>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="line">KSA</span>
+        <span class="line accent">Connect</span>
+        <span class="line">2026</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2">
+        Celebrating Korean culture. Building leaders.<br/>
+        Connecting communities across Ohio.
+      </p>
+      <div class="hero-meta reveal-up delay-3">
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          The Oval @ The Ohio State University
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/></svg>
+          Saturday, April 18, 2026
+        </div>
+        <div class="meta-divider"></div>
+        <div class="meta-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+          Hosted by OSU KSA
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Mission</span>
+        <h2 class="section-title">Connecting Korean Students<br/>Across Ohio</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            <strong>KSA Connect</strong> is an annual outdoor conference uniting Korean Student Associations
+            and Korean American Student Associations from universities across Ohio.
+            The 2026 event is proudly hosted by <strong>The Ohio State University Korean Student
+            Association</strong>, with CWRU KASA, KSA, and UC KSA joining as co-attending organizations.
+          </p>
+          <p>
+            Whether you're a general member or an executive board member, KSA Connect is your
+            opportunity to celebrate Korean culture and tradition, sharpen your professional and
+            leadership skills, and forge meaningful relationships with fellow passionate students from CWRU, OSU, and UC.
+          </p>
+          <p>
+            Together, we build a stronger, more unified Korean student community — not just on our
+            own campuses, but across the entire state of Ohio.
+          </p>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="about-card">
+            <div class="card-icon">🎎</div>
+            <h4>Culture &amp; Tradition</h4>
+            <p>Celebrate Korean heritage through shared experiences, food, and festivities.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🤝</div>
+            <h4>Community &amp; Connection</h4>
+            <p>Build lasting relationships with students who are of Korean descent or are interested in Korean culture, across Ohio.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">📈</div>
+            <h4>Professional Growth</h4>
+            <p>Develop leadership skills through workshops and meaningful discussions.</p>
+          </div>
+          <div class="about-card">
+            <div class="card-icon">🔭</div>
+            <h4>Future Planning</h4>
+            <p>Collaborate on initiatives and future plans for Ohio's KSA/KASA network.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIVERSITIES -->
+  <section class="section section-dark" id="universities">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Participating Schools</span>
+        <h2 class="section-title">Three Campuses, One Community</h2>
+        <div class="section-divider center"></div>
+        <p class="section-sub">
+          KSA Connect 2026 brings together KSAs and KASAs from three of Ohio's most vibrant
+          university campuses, united by a shared identity and mission.
+        </p>
+      </div>
+      <div class="unis-row">
+        <div class="uni-card osu reveal-up delay-1">
+          <div class="uni-glow"></div>
+          <div class="uni-badge host">Host</div>
+          <div class="uni-abbr">OSU</div>
+          <h4>The Ohio State University</h4>
+          <p>Columbus, Ohio</p>
+          <div class="uni-orgs">
+            <span>KSA</span>
+            <span>KASA</span>
+          </div>
+        </div>
+        <div class="uni-card cwru reveal-up delay-2">
+          <div class="uni-glow"></div>
+          <div class="uni-abbr">CWRU</div>
+          <h4>Case Western Reserve University</h4>
+          <p>Cleveland, Ohio</p>
+          <div class="uni-orgs">
+            <span>KSA</span>
+            <span>KASA</span>
+          </div>
+        </div>
+        <div class="uni-card uc reveal-up delay-3">
+          <div class="uni-glow"></div>
+          <div class="uni-abbr">UC</div>
+          <h4>University of Cincinnati</h4>
+          <p>Cincinnati, Ohio</p>
+          <div class="uni-orgs">
+            <span>KSA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="section" id="agenda">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Day of Events</span>
+        <h2 class="section-title">Schedule — April 18, 2026</h2>
+        <div class="section-divider center"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">11:00 AM</div>
+          <div class="timeline-dot red"></div>
+          <div class="timeline-body">
+            <span class="tl-tag arrival">Arrival</span>
+            <h4>Arrive, Setup &amp; Check-In</h4>
+            <p>Welcome to KSA Connect! Get checked in, find your group, and settle in.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">12:00 PM</div>
+          <div class="timeline-dot blue"></div>
+          <div class="timeline-body">
+            <span class="tl-tag culture">Opening</span>
+            <h4>Introductions &amp; Opening Ceremony</h4>
+            <p>Official introductions and welcoming remarks from each university's organization.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">12:30 PM</div>
+          <div class="timeline-dot red"></div>
+          <div class="timeline-body">
+            <span class="tl-tag food">Food</span>
+            <h4>Lunch</h4>
+            <p>Enjoy a shared meal — a great chance to start mingling with fellow attendees.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">1:30 PM</div>
+          <div class="timeline-dot blue"></div>
+          <div class="timeline-body">
+            <span class="tl-tag keynote">Keynote</span>
+            <h4>Presentation &amp; Featured Speakers</h4>
+            <p>Angie Park and Andy Yang (OSU KSA President &amp; Vice President) take the stage.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">2:30 PM</div>
+          <div class="timeline-dot red"></div>
+          <div class="timeline-body">
+            <span class="tl-tag network">Networking</span>
+            <h4>Networking, Minigames &amp; Open Chat</h4>
+            <p>Mix and mingle across campuses with fun minigames and relaxed conversation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">3:30 PM</div>
+          <div class="timeline-dot blue"></div>
+          <div class="timeline-body">
+            <span class="tl-tag culture">Activities</span>
+            <h4>Group Picture &amp; Outdoor Games</h4>
+            <p>Capture the moment with a group photo, then head outside for community games.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">5:00 PM</div>
+          <div class="timeline-dot red"></div>
+          <div class="timeline-body">
+            <span class="tl-tag exec">Workshops</span>
+            <h4>Workshops &amp; Executive Board Discussion</h4>
+            <p>All attendees join workshops. Exec board members hold a dedicated cross-campus strategy session.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">6:30 PM</div>
+          <div class="timeline-dot blue"></div>
+          <div class="timeline-body">
+            <span class="tl-tag food">Food</span>
+            <h4>Dinner</h4>
+            <p>Wind down over a shared dinner with great food and great company.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-time">7:30 PM</div>
+          <div class="timeline-dot red"></div>
+          <div class="timeline-body">
+            <span class="tl-tag culture">Closing</span>
+            <h4>Closing Ceremony &amp; Free Time</h4>
+            <p>Reflect on the day's connections, exchange contacts, and enjoy a relaxed close.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKERS -->
+  <section class="section section-dark" id="speakers">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Featured Speakers</span>
+        <h2 class="section-title">Voices of Our Community</h2>
+        <div class="section-divider center"></div>
+        <p class="section-sub">
+          At 1:30 PM, hear from OSU KSA's own leadership as they share insights on community,
+          leadership, and the future of Korean student organizations in Ohio.
+        </p>
+      </div>
+      <div class="speakers-grid">
+        <div class="speaker-card reveal-up delay-1">
+          <div class="speaker-glow red-glow"></div>
+          <div class="speaker-avatar red-av">
+            <img src="images/speakers/1664203467701.jpg" alt="Portrait of Angie Park" loading="lazy" />
+          </div>
+          <h4>Angie Park</h4>
+          <div class="speaker-role">President</div>
+          <div class="speaker-org">OSU Korean Student Association</div>
+          <div class="speaker-tag">Keynote Speaker</div>
+        </div>
+        <div class="speaker-card reveal-up delay-2">
+          <div class="speaker-glow blue-glow"></div>
+          <div class="speaker-avatar blue-av">
+            <img src="images/speakers/andy yang.jpg" alt="Portrait of Andy Yang" loading="lazy" />
+          </div>
+          <h4>Andy Yang</h4>
+          <div class="speaker-role">Vice President</div>
+          <div class="speaker-org">OSU Korean Student Association</div>
+          <div class="speaker-tag">Keynote Speaker</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS -->
+  <section class="section" id="workshops">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Growth &amp; Collaboration</span>
+        <h2 class="section-title">Workshops &amp; Discussions</h2>
+        <div class="section-divider center"></div>
+        <p class="section-sub">
+          Starting at 5:00 PM, all attendees participate in workshops designed to spark
+          conversation, build skills, and strengthen the Ohio KSA network.
+        </p>
+      </div>
+      <div class="workshops-grid">
+        <div class="workshop-card reveal-up delay-1">
+          <div class="workshop-number">01</div>
+          <div class="workshop-icon">🌐</div>
+          <h4>Cross-Campus Collaboration</h4>
+          <p>Explore how KSAs and KASAs from CWRU, OSU, and UC can work together on shared
+          initiatives, events, and goals across Ohio.</p>
+        </div>
+        <div class="workshop-card reveal-up delay-2">
+          <div class="workshop-number">02</div>
+          <div class="workshop-icon">🎋</div>
+          <h4>Korean Identity &amp; Leadership</h4>
+          <p>Discuss what it means to lead as a Korean or Korean American student and how to
+          center cultural identity in your organization's mission.</p>
+        </div>
+        <div class="workshop-card reveal-up delay-3">
+          <div class="workshop-number">03</div>
+          <div class="workshop-icon">📋</div>
+          <h4>Future of Ohio KSA/KASA</h4>
+          <p>Brainstorm and plan bigger, longer-term ambitions for Korean student organizations
+          throughout Ohio — together.</p>
+        </div>
+      </div>
+      <div class="exec-banner reveal-up">
+        <div class="exec-banner-icon">🛡️</div>
+        <div class="exec-banner-text">
+          <h4>Executive Board Breakout Session</h4>
+          <p>Simultaneously, executive board members from all attending KSAs and KASAs will
+          convene for a dedicated cross-campus leadership discussion — sharing challenges,
+          successes, and strategic plans for the future of their organizations.</p>
+        </div>
+        <div class="exec-banner-tag">Exec Only</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-divider center"></div>
+      </div>
+      <div class="contact-wrap reveal-up">
+        <div class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <h3>Questions? We're happy to help.</h3>
+          <p>For general inquiries about KSA Connect 2026, event details, or anything else,
+          feel free to reach out directly via email.</p>
+          <a href="mailto:yang.6360@buckeyemail.osu.edu" class="contact-btn">
+            <span>Send Us an Email</span>
+            <svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+          </a>
+          <div class="contact-email">yang.6360@buckeyemail.osu.edu</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">KSA<span>Connect</span> <em>2026</em></div>
+      <nav class="footer-links">
+        <a href="#about">About</a>
+        <a href="#universities">Universities</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#workshops">Workshops</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-divider"></div>
+      <p class="footer-host">
+        Hosted by <strong>OSU Korean Student Association</strong> · April 18, 2026 · Columbus, Ohio
+      </p>
+      <p class="footer-copy">
+        © 2026 KSA Connect · Designed by <strong>OSU KSA Membership Team</strong>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
